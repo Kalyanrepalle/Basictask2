@@ -1,35 +1,44 @@
-# Password-Generator
-
-This project is a Java Console Application to generate random passwords and perform password strength checks.
+# Password Generator
 
 ## Introduction
 
-I decided to build this project during the Winter Break of my second year after taking the Object-Oriented Effective Java Programming course. I wanted to build something interesting with Java to practice and see what I could do on my own. However, I still wasn't sure what I wanted to do. Then one night, while explaining to my father the importance of having a strong password for his social media accounts, I got the idea of creating a random password generator. A week later, it was done. 
+During the Winter Break of my second year, after completing the Object-Oriented Effective Java Programming course, I was looking for a practical project to apply my Java skills. One night, while discussing online security with my father, I realized the importance of having strong passwords. Inspired by this conversation, I decided to create a Java Console Application for generating random passwords and checking their strength.
 
-While working on it, I decided to include a password strength checker feature that checks the overall strength of the entered password. I was pretty happy with how it turned out, but I realized that it was not very straightforward to use for someone who does not know how it is supposed to work. So, I decided to create a GUI for the application for the next step, which is available in the Password-Services repository.
+## Features
 
-## Functionalities
+### 1. Password Generation
 
-### 1. Generating a Password:
+- Users specify their preferences for including uppercase letters, lowercase letters, numbers, and symbols.
+- Users input the desired length of the password.
+- Based on user preferences, a password alphabet is generated.
+- Random characters from the password alphabet are combined to create a completely random string.
+- The generated password is displayed on the console.
 
-- The user answers with "Yes" or "No" to questions about using uppercase letters, lowercase letters, numbers, or symbols.
-- The user then enters the desired length of the password.
-- A password alphabet is generated based on the user's answers, which is a string containing the chosen characters.
-- Random characters from the password alphabet are selected and combined to form a completely random string according to the user's preferences.
-- The randomly generated password is then displayed on the console.
+### 2. Password Strength Check
 
-### 2. Checking a Password's Strength:
+The strength of the password is evaluated based on the following criteria:
 
-The strength check is based on the following criteria:
-- The password uses uppercase letters.
-- The password uses lowercase letters.
-- The password uses numbers.
-- The password uses symbols.
-- The length of the password is 8 or more (8 is often the minimum required length for a decent password).
-- The length of the password is 16 or more (16 is considered to be the minimum length for a good password).
+- Usage of uppercase letters.
+- Usage of lowercase letters.
+- Usage of numbers.
+- Usage of symbols.
+- Length of the password (8 or more characters for decent strength, 16 or more for good strength).
 
-These criteria are used to calculate a score for the password, which determines the message displayed to the user indicating the strength of the password (weak/medium/good/great).
+A score is calculated based on these criteria, and a corresponding strength message (weak/medium/good/great) is displayed to the user.
 
-### 3. Displaying Useful Information:
+### 3. Displaying Useful Information
 
-This is a minor feature that displays information for the user on the console about password security, such as avoiding using the same password twice, avoiding character repetition, keyboard patterns, dictionary words, letter or number sequences, etc.
+Users receive tips on password security, such as avoiding password reuse, character repetition, keyboard patterns, dictionary words, and sequential characters.
+
+## Next Steps
+
+While the current version of the project is functional in the console, I plan to enhance the user experience by creating a graphical user interface (GUI) for the application. This GUI version will be available in the Password-Services repository.
+
+## How to Use
+
+To use the Password Generator, simply run the Java Console Application and follow the prompts to generate a password or check its strength.
+
+## Contributions
+
+Contributions to improve the functionality and usability of the Password Generator are welcome. Feel free to submit pull requests or open issues for any suggestions or bug reports.
+
